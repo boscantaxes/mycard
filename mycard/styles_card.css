@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-image: url('background.jpg'); /* Imagen de fondo */
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    letter-spacing: 0.5px;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    max-width: 500px;
+    padding: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Mayor desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.profile-img {
+    width: 70px; /* Tamaño reducido */
+    height: 70px; /* Tamaño reducido */
+    margin-top: 12px;
+    margin-bottom: 5px;
+    border: 5px solid #cca64e; /* Borde circular de color azul oscuro */
+    border-radius: 50%; /* Hace que el borde sea circular */
+    transition: border-radius 0.3s ease; /* Suaviza la transición*/
+}
+
+.profile-img:hover {
+    border: 5px solid #001447; /* Borde circular de color azul oscuro */
+    border-radius: 50%; /* Hace que el borde sea circular */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.services {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.cta-button .btn {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #001447;
+    background-color:  #cca64e;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    letter-spacing: 0px;
+}
+
+.cta-button .btn:hover {
+    background-color: #001447;
+    color: #fff;
+    transition: background-color 400ms ease, color 400ms ease;
+}
+
+.contact-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.contact-info p, .address {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.contact-info i {
+    color: #fff;
+    margin-right: 8px;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y el texto */
+    justify-content: flex-start;
+}
+
+.contact-info .contact-item i {
+    color: #fff;
+    font-size: 1.2em; /* Ajusta el tamaño del icono si es necesario */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.contact-info .contact-item:hover i {
+    color: #cca64e; /* Color rojo al hacer hover */
+}
+
+.contact-item:hover {
+    color: #cca64e; /* Color rojo al hacer hover */
+}
+
+.contact-link {
+    color: #fff;
+    text-decoration: none; /* Quita el subrayado de los textos */
+}
+
+.contact-link:hover {
+    color: #cca64e; /* Color rojo al hacer hover */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-link img {
+    width: 70px; /* Tamaño reducido */
+    height: 70px; /* Tamaño reducido */
+    margin-bottom: 15px;
+    border-radius: 50%; /* Hace que el borde sea circular */
+    transition: border-radius 0.3s ease; /* Suaviza la transición*/
+}
+
+.whatsapp-link img:hover {
+    border: 5px solid #001447; /* Borde circular de color azul oscuro */
+    border-radius: 50%; /* Hace que el borde sea circular */
+}
+
+.address-container {
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 10px; /* Ajusta el espacio alrededor si es necesario */
+}
+
+.address {
+    display: inline-flex; /* Hace que el texto y el ícono se alineen en una línea */
+    align-items: center; /* Centra verticalmente el contenido dentro del inline-flex */
+    font-size: 14px;
+}
+
+.share-btn {
+    margin-left: 20px; /* Espacio entre el texto y el ícono de compartir */
+    text-decoration: none;
+}
+
+.share-icon {
+    width: 20px; /* Ajusta el tamaño según prefieras */
+    height: 20px;
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover para el icono de compartir */
+.share-btn:hover .share-icon {
+    width: 25px; /* Tamaño reducido */
+    height: 25px; /* Tamaño reducido */
+}
